@@ -1,10 +1,13 @@
 <script>
-  var password = "9102007"; // حطي الباسورد اللي تحبيه
+document.addEventListener('DOMContentLoaded', function() {
+  var password = "9102007"; // غيري الباسورد زي ما تحبي
   var user = prompt("من فضلك ادخلي كلمة السر:");
-  if(user !== password){
-    document.body.innerHTML = "<h2 style='color:red;text-align:center'>كلمة السر غلط ❌</h2>";
+  if (user === null || user !== password) {
+    document.body.innerHTML = "<h2 style='color:red; text-align:center; margin-top:50px;'>كلمة السر غلط ❌</h2>";
   }
+});
 </script>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -490,6 +493,7 @@
 </body>
 
 </html>
+
 
 
 
